@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+<meta charset="utf-8"/>
+<title>Codesparsh</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="./styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+<div >
+    <header>
+        <div class="logo float-left">
+            <h1><a href="">Codesparsh</a></h1>
+        </div> 
+        <div class="nav-icon float-right">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+    <!-- Full Menu -->
+    <div class="full-menu">
+        <div class="fullmenu-content">
+            <ul class="page-menu">
+                <li><a class="close-ink" href="#home">Home</a></li>
+                <li><a class="close-ink" href="#about">About</a></li>
+                <li><a class="close-ink" href="#projects">Projects</a></li>
+                <li><a class="close-ink" href="#contact">Contact</a></li>
+                <li class="social">
+                    <a href="https://twitter.com/codesparsh"><img src="icons/social/twitter.svg" alt=""></a>
+                    <a href="mailto:snowmansparsh4@gmail.com"><img src="icons/social/gmail.svg" alt=""></a>
+                    <a href="https://github.com/codesparsh"><img src="icons/social/github.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/sparsh-tandon-813212163/"><img src="icons/social/linkedin.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <a href="#0" class="modal-close"></a>
+    </div>
+    <div class="cd-transition-layer"> 
+        <div class="bg-layer"></div>
+    </div>
+    <!-- Ink Transition -->
+     
+    <div class="main bg" id="home">
+        <div class="row main-content">
+            <h1 class="col-md-4 ml-md-auto hello">Hello,</h1>
+            <h1 class="col-md-4 ml-md-auto main-title">I'm Sparsh Tandon<br>
+            Competitive Coder | Artist.</h1>
+            <div class="col-md-3 ml-md-auto social">
+                <a href="https://twitter.com/codesparsh"><img src="icons/front/twitter.svg" alt=""></a>
+                <a href="mailto:snowmansparsh4@gmail.com"><img src="icons/front/telegram.svg" alt=""></a>
+                <a href="https://github.com/codesparsh"><img src="icons/front/github.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/sparsh-tandon-813212163/"><img src="icons/front/linkedin.svg" alt=""></a>
+
+            </div>
+        </div>	 
+    </div>
+    <div class="main bg2" id="about">
+             <center>
+                 <h1 class="heading my-4">About Me </h1>
+             </center>
+             <div class="row mt-5">
+                 <div class="col-md-4">
+                    <img src="char2.png" class="img-fluid" alt="Responsive image">
+                 </div>
+                 <div class="col-md-7 .offset-md-1">
+                    <div class="topic my-4">
+                        <p class="intro">
+                            Hello, I'm Sparsh Tandon a second year undergrad 
+                            student at Bharati Vidyapeeth (Deemed to be University)
+                             College of Engineering.</p>
+                        
+                        <p class="intro">From beautiful frontends to robust backend, 
+                            I work it all. I also am a competetive programmer. 
+                            I try to solve all problems in constant time.</p>
+                    </div>
+                    <div class="my-4">
+                        
+                    <div class="mt-5 mb-4">
+                        <h4 class="topic font-weight-bold">Competitve Coding</h4>
+                    </div>
+                    <div class="progress" >
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        </div>
+                    </div>
+
+                    <div class="mt-5  mb-4">
+                        <h4 class="topic font-weight-bold">Web Development</h4>
+                    </div>
+                    <div class="progress" >
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                        </div>
+                      </div>
+
+
+                    <div class="mt-5 mb-4">
+                        <h4 class="topic font-weight-bold">App Development</h4>    
+                    </div>
+                    <div class="progress" >
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        </div>
+                    </div>
+                 
+                    </div>  
+
+                </div>
+                 
+             </div>
+             
+    </div>
+       <din class="main bg3" id="projects">
+           <center>
+               <h1 class="heading my-4">Projects </h1>
+           </center>
+               <div class="row my-5 mx-5">
+                <div class="col-md-6 d-flex justify-content-center my-4">
+                    <div class="card" style="width: 36rem;">
+                        <div class="card-body">
+                        <h4 class="card-title">Scribe</h4>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                        <p class="card-text">Scribe is thought sharing platform where you can share your thoughts and craziest ideas with the world.</p>
+                        <a href="https://scribe-4743a.firebaseapp.com/home" class="card-link">Project link</a>
+                        <!-- <a href="#" class="card-link">Github link</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center my-4">
+                    <div class="card" style="width: 36rem;">
+                        <div class="card-body">
+                        <h4 class="card-title">Notes App</h4>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                        <p class="card-text">The basic idea was to create a CRUD based Notes app through the Command Line Interface. </p>
+                        <a href="https://github.com/codesparsh/notes_app" class="card-link">Project link</a>
+                        <!-- <a href="#" class="card-link">Github link</a> -->
+                        </div>
+                    </div>
+                </div>
+           </div>    
+            <div class="row my-5 mx-5 ">
+                <div class="col-md-6 d-flex justify-content-center my-4">
+                    <div class="card" style="width: 36rem;">
+                        <div class="card-body">
+                        <h4 class="card-title">Breeze</h4>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                        <p class="card-text">A Tinder like mobile dating app that is made with flutter and a noSQL mongoDB Database to securely store the information.</p>
+                        <a href="#" class="card-link">Project link</a>
+                        <!-- <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center my-4">
+                    <div class="card" style="width: 36rem;">
+                        <div class="card-body">
+                        <h4 class="card-title">Attendence Management System</h4>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                        <p class="card-text">A mobile Application which can be used to manage the data of the participants in various events with simple scanning of QRcode.</p>
+                        <a href="#" class="card-link">Project link</a>
+                        <!-- <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+           
+        </din>
+        <div class="main bg2" id="contact">
+            <center>
+                <h1 class="heading my-4">Contact</h1>
+            </center>
+            <div class="row">
+                <div class="col-md-6 main-contact">
+                    <img src="cont.png" alt="Responsive image" >
+
+                </div>
+                <div class="col-md-3 mx-auto my-auto">
+                    <form action="" id="contact">
+                        <div class="form-group" id="form">
+                            <h4 class="contact-head">Feel free to reach out!</h4>
+                            <!-- <label for="exampleFormControlInput1">Name</label> -->
+                            <input type="name" id="username" value="" class="form-control rounded my-5" placeholder="@Username">
+                            <!-- <label for="exampleFormControlInput1">Email address</label> -->
+                            <input type="email" id="email" class="form-control rounded my-5" placeholder="name@example.com">
+                                <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                            <textarea class="form-control" id="message" value="" rows="3" placeholder="Message"></textarea>
+                            <div class="col-md-3 float-right my-4">
+                                <button type="button" id="submitButton" class="btn" ><img src="icons/_arrow_right.svg" alt=""></button>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!-- <div class="alert alert-success" role="alert">
+                       
+                     </div> -->
+                </div>
+
+            </div>
+        </div>
+</div>      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="jquery-2.1.4.min.js"></script>
+<script>
+ 'use strict'; 
+ AOS.init();
+
+  $(document).ready( function() {
+
+    $(".home").on('click', function(event) {
+
+    if (this.hash !== "") {
+    event.preventDefault();
+
+    var hash = this.hash;
+
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+        window.location.hash = hash;
+    });
+    }
+    });
+
+    var width = 100,
+        perfData = window.performance.timing, 
+        EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+        time = ((EstimatedTime/1000)%50) * 100
+
+
+    // Percentage Increment Animation
+    var PercentageID = $(".percentage"),
+            start = 0,
+            end = 100,
+            durataion = time;
+            animateValue(PercentageID, start, end, durataion);
+
+    function animateValue(id, start, end, duration) {
+
+        var range = end - start,
+          current = start,
+          increment = end > start? 1 : -1,
+          stepTime = Math.abs(Math.floor(duration / range)),
+          obj = $(id);
+
+
+        var timer = setInterval(function() {
+            current += increment;
+            $(obj).text(current);
+           //obj.innerHTML = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+    
+
+    
+	setTimeout(function(){
+        $('.preloader').fadeOut();
+        
+        // $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
+        //     $(this).removeClass("visible closing opening").dequeue();
+        // });
+        
+	}, time);
+		
+    
+
+
+   // FADE OUT EFFECT WHEN CLICK A LINK
+    $(document).on("click", "a:not(.lightbox)", function () {
+        var newUrl = $(this).attr("href");
+        if (!newUrl || newUrl[0] === "#") {
+            location.hash = newUrl;
+            return;
+        }
+        $("html").fadeOut(function () {
+            location = newUrl;
+        });
+        return false;
+    });
+    
+
+    var paget = $(".page-title .title").text();
+
+    $( ".page-title").append("<span></span>");
+    $( ".page-title span").append(paget);
+
+
+    
+    //posts page hover 
+    // $('.blog-post .blog-link').hover(function(){
+    //     $(this).parent('.content-outter').parent('.blog-post').toggleClass('mousef');
+    //     $(this).parent('.blog-post').toggleClass('mousef');
+    // });
+ 
+});  
+
+
+
+
+$(window).load( function() {
+ 
+
+function smokeeffect () { 
+    var modalTrigger = $('.nav-icon'),
+        transitionLayer = $('.cd-transition-layer'),
+        transitionBackground = transitionLayer.children(),
+        modalWindow = $('.full-menu');
+
+    var frameProportion = 1.78, //png frame aspect ratio
+        frames = 25, //number of png frames
+        resize = false;
+
+    //set transitionBackground dimentions
+    setLayerDimensions();
+    $(window).on('resize', function(){
+        if( !resize ) {
+            resize = true;
+            (!window.requestAnimationFrame) ? setTimeout(setLayerDimensions, 300) : window.requestAnimationFrame(setLayerDimensions);
+        }
+    });
+
+    //open modal window
+    modalTrigger.on('click', function(event){   
+        event.preventDefault();
+        transitionLayer.addClass('visible opening');
+        var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
+        setTimeout(function(){
+            modalWindow.addClass('visible');
+        }, delay);
+    });
+
+    //close modal window
+    modalWindow.on('click', '.modal-close', function(event){
+        event.preventDefault();
+        transitionLayer.addClass('closing');
+        modalWindow.removeClass('visible');
+        transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+            transitionLayer.removeClass('closing opening visible');
+            transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+        });
+    });
+
+    modalWindow.on('click', '.close-ink', function(event){
+        event.preventDefault();
+        transitionLayer.addClass('closing');
+        modalWindow.removeClass('visible');
+        transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+            transitionLayer.removeClass('closing opening visible');
+            transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+        });
+    });
+
+    function setLayerDimensions() {
+        var windowWidth = $(window).width(),
+            windowHeight = $(window).height(),
+            layerHeight, layerWidth;
+
+        if( windowWidth/windowHeight > frameProportion ) {
+            layerWidth = windowWidth;
+            layerHeight = layerWidth/frameProportion;
+        } else {
+            layerHeight = windowHeight*1.2;
+            layerWidth = layerHeight*frameProportion;
+        }
+
+        transitionBackground.css({
+            'width': layerWidth*frames+'px',
+            'height': layerHeight+'px',
+        });
+
+        resize = false;
+    }
+
+}
+smokeeffect()
+
+ 
+    
+/*--------------------------------------------------
+ Hero Section Height
+---------------------------------------------------*/	
+     function homeh() {
+        var hometext = $('.main')
+
+        hometext.css({
+            "height": $(window).height() + "px"
+        });
+    }
+    homeh();
+    $(window).resize(homeh);
+
+
+    $( ".page-menu li:not(.social) a, .portfolio_filter ul li a").append( "<span></span>" );
+
+    $('.nav-icon').on("click", function(){
+            $(this).toggleClass('modal-close');
+    });
+ 
+ 
+     
+}); // document load end 
+
+  
+</script>  
+</body>
+<script src="./script.js"></script>
+
+</html>
