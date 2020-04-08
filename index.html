@@ -4,9 +4,20 @@
 <head>
 <meta charset="utf-8"/>
 <title>Codesparsh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="Cache-control" content="max-age=31557600">
+<meta http-equiv="Cache-control" content="">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="From web apps to mobile apps, from solving problems in constant time to creating beautiful User Experiences - Sparsh" />
+<meta name="author" content="Sparsh Tandon">
+<meta name="keywords" content="Sparsh's website, Sparsh Tandon, Sparsh, Sparsh site, Sparsh works, Sparsh portfolio, Sparsh Tandon BVP, Sparsh Tandon CMS">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#15171c">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="./styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
@@ -18,7 +29,7 @@
 <div >
     <header>
         <div class="logo float-left">
-            <h1><a href="">Codesparsh</a></h1>
+           <h1> <a href="">Codesparsh</a></h1>
         </div> 
         <div class="nav-icon float-right">
             <span></span>
@@ -48,7 +59,6 @@
     <div class="cd-transition-layer"> 
         <div class="bg-layer"></div>
     </div>
-    <!-- Ink Transition -->
      
     <div class="main bg" id="home">
         <div class="row main-content">
@@ -70,7 +80,7 @@
              </center>
              <div class="row mt-5">
                  <div class="col-md-4">
-                    <img src="char2.png" class="img-fluid" alt="Responsive image">
+                    <img src="aboutme.png" class="img-fluid mx-auto" alt="Responsive image">
                  </div>
                  <div class="col-md-7 .offset-md-1">
                     <div class="topic my-4">
@@ -83,7 +93,7 @@
                             I work it all. I also am a competetive programmer. 
                             I try to solve all problems in constant time.</p>
                     </div>
-                    <div class="my-4">
+                    <div class="my-4 progress-content">
                         
                     <div class="mt-5 mb-4">
                         <h4 class="topic font-weight-bold">Competitve Coding</h4>
@@ -99,7 +109,7 @@
                     </div>
                     <div class="progress" >
                         <div class="progress-bar" role="progressbar" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
                         </div>
                       </div>
 
@@ -109,7 +119,7 @@
                     </div>
                     <div class="progress" >
                         <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        aria-valuemin="0" aria-valuemax="100" style="width:75%">
                         </div>
                     </div>
                  
@@ -124,86 +134,110 @@
            <center>
                <h1 class="heading my-4">Projects </h1>
            </center>
-               <div class="row my-5 mx-5">
-                <div class="col-md-6 d-flex justify-content-center my-4">
-                    <div class="card" style="width: 36rem;">
-                        <div class="card-body">
-                        <h4 class="card-title">Scribe</h4>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">Scribe is thought sharing platform where you can share your thoughts and craziest ideas with the world.</p>
-                        <a href="https://scribe-4743a.firebaseapp.com/home" class="card-link">Project link</a>
-                        <!-- <a href="#" class="card-link">Github link</a> -->
+           <div class="row ">
+               <div class="col-md-3">
+                    <div class="cards">
+                        <div class="card-front notes">
+                             <center class="card-text">
+                                <h2>Notes-App</h2>
+                                <img src="./icons/arrow_down.svg" alt="">
+
+                             </center>
+                                    
+                            
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-center my-4">
-                    <div class="card" style="width: 36rem;">
-                        <div class="card-body">
-                        <h4 class="card-title">Notes App</h4>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">The basic idea was to create a CRUD based Notes app through the Command Line Interface. </p>
-                        <a href="https://github.com/codesparsh/notes_app" class="card-link">Project link</a>
-                        <!-- <a href="#" class="card-link">Github link</a> -->
+                        <div class="card-back">
+                            <div class="mt-5">
+                                <h2>Notes-App</h2>
+                                <p class="my-4 mx-3">The basic idea was to create a CRUD based Notes app through the Command Line Interface. Currently, the users can Create, List, Read and Delete their content.</p>
+                            </div>    
+                            <a href="https://github.com/codesparsh/notes_app" class="git-link">Code<img src="./icons/code-black.svg" alt=""></a>
+                        
                         </div>
+                     </div>
+               </div>
+               <div class="col-md-3">
+                <div class="cards">
+                    <div class="card-front breeze">
+                        <center class="card-text">
+                            <h2>Breeze</h2>
+                            <img src="./icons/arrow_down.svg" alt="">
+                        
+                        </center>
                     </div>
-                </div>
-           </div>    
-            <div class="row my-5 mx-5 ">
-                <div class="col-md-6 d-flex justify-content-center my-4">
-                    <div class="card" style="width: 36rem;">
-                        <div class="card-body">
-                        <h4 class="card-title">Breeze</h4>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">A Tinder like mobile dating app that is made with flutter and a noSQL mongoDB Database to securely store the information.</p>
-                        <a href="#" class="card-link">Project link</a>
-                        <!-- <a href="#" class="card-link">Another link</a> -->
+                    <div class="card-back">
+                        <div class="mt-5">
+                            <h2>Breeze</h2>
+                            <p class="my-4 mx-3"> Tinder like geosocial networking and online dating application which allows users to create profiles and like/dislike others profiles nearby. </p>
                         </div>
+                        <a href="https://github.com/codesparsh/breeze-tinder" class="git-link">Code<img src="./icons/code-black.svg" alt=""></a>
+                        
                     </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-center my-4">
-                    <div class="card" style="width: 36rem;">
-                        <div class="card-body">
-                        <h4 class="card-title">Attendence Management System</h4>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                        <p class="card-text">A mobile Application which can be used to manage the data of the participants in various events with simple scanning of QRcode.</p>
-                        <a href="#" class="card-link">Project link</a>
-                        <!-- <a href="#" class="card-link">Another link</a> -->
+                 </div>
+               </div>               
+               <div class="col-md-3">
+                <div class="cards">
+                    <div class="card-front scribe">
+                         <center class="card-text">
+                            <h2>Scribe</h2>
+                            <img src="./icons/arrow_down.svg" alt="">
+                        
+                        </center>
+
+                    </div>
+                    <div class="card-back">
+                        <div class="mt-5">
+                            <h2>Scribe</h2>
+                            <p class="my-4 mx-3">Scribe is thought sharing platform where you can share your thoughts and craziest ideas with the world.</p>
                         </div>
+                        <a href="https://github.com/codesparsh/Scribe" class="git-link">Code<img src="./icons/code-black.svg" alt=""></a>
+
                     </div>
-                </div>
-            
-            </div>
+                 </div>
+               </div>               
+               <div class="col-md-3">
+                <div class="cards">
+                    <div class="card-front atten">
+                         <center class="card-text">
+                         <h2>Attendance-Man.</h2>
+                         <img src="./icons/arrow_down.svg" alt="">
+                            
+                        </center>
+                    </div>
+                    <div class="card-back">
+                        <div class="mt-5">
+                            <h2>Attendance-<br>Management</h2>
+                            <p class="my-4 mx-3"> Flutter based App which makes marking attendance easy in technical or non-technical events.</p>
+                        </div>
+                        <a href="https://github.com/codesparsh/Attendance-Management-App-" class="git-link">Code<img src="./icons/code-black.svg" alt=""></a>
+                    </div>
+                 </div>
+               </div>            
+           </div>
 
            
         </din>
-        <div class="main bg2" id="contact">
+        <div class="main bg4" id="contact">
             <center>
                 <h1 class="heading my-4">Contact</h1>
             </center>
             <div class="row">
-                <div class="col-md-6 main-contact">
-                    <img src="cont.png" alt="Responsive image" >
-
-                </div>
-                <div class="col-md-3 mx-auto my-auto">
+                <div class="col-md-3 mx-auto main-contact mx-3">
                     <form action="" id="contact">
                         <div class="form-group" id="form">
                             <h4 class="contact-head">Feel free to reach out!</h4>
-                            <!-- <label for="exampleFormControlInput1">Name</label> -->
                             <input type="name" id="username" value="" class="form-control rounded my-5" placeholder="@Username">
-                            <!-- <label for="exampleFormControlInput1">Email address</label> -->
                             <input type="email" id="email" class="form-control rounded my-5" placeholder="name@example.com">
-                                <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
                             <textarea class="form-control" id="message" value="" rows="3" placeholder="Message"></textarea>
                             <div class="col-md-3 float-right my-4">
-                                <button type="button" id="submitButton" class="btn" ><img src="icons/_arrow_right.svg" alt=""></button>
+                                <button type="button" id="submitButton" class="btn" ><img src="icons/arrow_right.svg" alt=""></button>
                             </div>
 
                         </div>
                     </form>
-                    <!-- <div class="alert alert-success" role="alert">
-                       
-                     </div> -->
+
+                </div>
+                <div class="col-md-6 main-contact">
                 </div>
 
             </div>
@@ -239,8 +273,6 @@
         EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
         time = ((EstimatedTime/1000)%50) * 100
 
-
-    // Percentage Increment Animation
     var PercentageID = $(".percentage"),
             start = 0,
             end = 100,
@@ -259,7 +291,6 @@
         var timer = setInterval(function() {
             current += increment;
             $(obj).text(current);
-           //obj.innerHTML = current;
             if (current == end) {
                 clearInterval(timer);
             }
@@ -271,16 +302,10 @@
 	setTimeout(function(){
         $('.preloader').fadeOut();
         
-        // $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
-        //     $(this).removeClass("visible closing opening").dequeue();
-        // });
-        
 	}, time);
 		
     
 
-
-   // FADE OUT EFFECT WHEN CLICK A LINK
     $(document).on("click", "a:not(.lightbox)", function () {
         var newUrl = $(this).attr("href");
         if (!newUrl || newUrl[0] === "#") {
@@ -299,14 +324,6 @@
     $( ".page-title").append("<span></span>");
     $( ".page-title span").append(paget);
 
-
-    
-    //posts page hover 
-    // $('.blog-post .blog-link').hover(function(){
-    //     $(this).parent('.content-outter').parent('.blog-post').toggleClass('mousef');
-    //     $(this).parent('.blog-post').toggleClass('mousef');
-    // });
- 
 });  
 
 
@@ -321,11 +338,10 @@ function smokeeffect () {
         transitionBackground = transitionLayer.children(),
         modalWindow = $('.full-menu');
 
-    var frameProportion = 1.78, //png frame aspect ratio
-        frames = 25, //number of png frames
+    var frameProportion = 1.78, 
+        frames = 25, 
         resize = false;
 
-    //set transitionBackground dimentions
     setLayerDimensions();
     $(window).on('resize', function(){
         if( !resize ) {
@@ -344,7 +360,7 @@ function smokeeffect () {
         }, delay);
     });
 
-    //close modal window
+
     modalWindow.on('click', '.modal-close', function(event){
         event.preventDefault();
         transitionLayer.addClass('closing');
@@ -389,11 +405,6 @@ function smokeeffect () {
 }
 smokeeffect()
 
- 
-    
-/*--------------------------------------------------
- Hero Section Height
----------------------------------------------------*/	
      function homeh() {
         var hometext = $('.main')
 
@@ -413,7 +424,7 @@ smokeeffect()
  
  
      
-}); // document load end 
+});
 
   
 </script>  
