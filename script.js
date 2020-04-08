@@ -1,3 +1,10 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+}).catch(function(err) {
+        console.log('ServiceWorker registration failed: ', err);
+    });
+}
 
 var a = { 
     apiKey: "AIzaSyA8wTDZ5lmdrGLd03-XiSndq5-2DZvjMDw",
@@ -19,7 +26,7 @@ var submitButton = document.querySelector("#submitButton");
 var form = document.querySelector("#form");
 
 submitButton.addEventListener("click",function() {
-    
+
     const savedName = username.value;
     const savedEmail = email.value;
     const savedMessage = message.value;
